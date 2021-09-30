@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "decode",
+      "setup": "",
+      "run": "dd if=test_data.bz2 |openssl des3 -d -pbkdf2 -k  114514|tar zxf -",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "test",
+      "setup": "",
+      "run": "make test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "notify",
+      "setup": "",
+      "run": "bash notify.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    }
+  ]
+}
